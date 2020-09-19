@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小黄人踢足球</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        ul,ol{list-style: none;}
+        a{text-decoration: none;color: #666;}
+        img{display: block;}
+        h1,h2,h3,h4,h5,h6{font-size: 16px;font-weight: normal;}
+
+        .l{float: left;}
+        .r{float: right;}
+        .clear:after{content: '';display: block;clear: both;}
+
+        body{background-image: linear-gradient(to right,#021330,#243b6c,#021330);}
+        #idear{width: 500px;margin: 20px auto;perspective: 500px;}
+        #idear ul{width: 500px;height: 500px;position: relative;transform-style: preserve-3d;transform: rotateX(-110deg);}
+        #idear ul li{position: absolute;transition: 1s;overflow: hidden;}
+        #idear ul li div{position: absolute;left: -10px;top: 20px; width: 15px;height: 100px;background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));transform: rotateZ(-45deg);}
+        #idear ul li .light{left: -85px; width: 100px;height: 1000px;background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));transform: rotateZ(-45deg);}
+        #idear ul li img{width: 40px;height: 70px;border-radius: 50%;}       
+        #idear ul li:nth-of-type(1){width: 380px;height: 500px;background: url( "./img/草坪.png");}
+        #idear ul li:nth-of-type(2){width: 380px;height: 30px;background: #2d271f;left: 0;bottom: 0;transform-origin: bottom;transform: rotateX(-90deg);}
+        #idear ul li:nth-of-type(3){width: 380px;height: 30px;background: #2d271f;transform-origin: top;transform: rotateX(90deg);}
+        #idear ul li:nth-of-type(4){width: 30px;height: 500px;background: #2d271f;transform-origin: left;transform: rotateY(-90deg);}
+        #idear ul li:nth-of-type(5){width: 30px;height: 500px;background: #2d271f;left: 380px;transform-origin: left;transform: rotateY(-90deg);}
+        #idear ul li:nth-of-type(6){left: 50px;top: 50px;transform: rotateX(-70deg) translateY(147px);opacity: 0;}
+        #idear ul li:nth-of-type(7){right: 150px;top: 40px;transform: rotateX(-70deg) translateY(147px);opacity: 0;}
+        #idear ul li:nth-of-type(8){left: 50px;bottom: 50px;transform: rotateX(-70deg) translateY(147px);opacity: 0;}
+        #idear ul li:nth-of-type(9){left: 175px;top: 250px;transform: rotateX(-70deg) translateY(147px);opacity: 0;}
+        #idear ul li:nth-of-type(10){right: 150px;bottom: 50px;transform: rotateX(-70deg) translateY(147px);opacity: 0;}
+        #idear ul:hover li:nth-of-type(6){transform: rotateX(-70deg) translateY(47px);opacity: 1;}
+        #idear ul:hover li:nth-of-type(7){transform: rotateX(-70deg) translateY(47px);opacity: 1;}
+        #idear ul:hover li:nth-of-type(8){transform: rotateX(-70deg) translateY(47px);opacity: 1;}
+        #idear ul:hover li:nth-of-type(9){transform: rotateX(-70deg) translateY(47px);opacity: 1;}
+        #idear ul:hover li:nth-of-type(10){transform: rotateX(-70deg) translateY(47px);opacity: 1;}
+        #idear ul:hover li div{transform:  rotateZ(-45deg) translate(100px);transition: 0.5s 1.5s;}
+        #idear ul:hover li .light{transform:  rotateZ(-45deg) translate(1000px);transition: 1s 1s;}
+    </style>
+</head>
+<body>
+    <div id="idear">
+        <ul>
+            <li>
+                <div class="light"></div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>        
+            <li>
+                <img src="./img/小黄人1.jpg" alt="">
+                <div></div>
+            </li>
+            <li>
+                <img src="./img/小黄人2.jpg" alt="">
+                <div></div>
+            </li>
+            <li>
+                <img src="./img/小黄人4.jpg" alt="">
+                <div></div>
+            </li>
+            <li>
+                <img src="./img/小黄人5.jpg" alt="">
+                <div></div>
+            </li>
+            <li>
+                <img src="./img/小黄人2.jpg" alt="">
+                <div></div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
